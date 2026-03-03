@@ -4,6 +4,18 @@ A suite of 8 AI-powered academic workflow skills for Claude Code, designed for A
 
 ## Installation
 
+### Quick Install (Recommended)
+
+```bash
+# Add the marketplace
+claude plugin marketplace add JeanDiable/academic-research-plugin
+
+# Install the plugin
+claude plugin install academic-research
+```
+
+### Manual Install
+
 1. Clone this repository:
 
 ```bash
@@ -22,13 +34,9 @@ pip install -r academic-research-plugin/lib/requirements.txt
 claude plugin add /path/to/academic-research-plugin
 ```
 
-Or symlink into your Claude plugins directory:
+### Optional
 
-```bash
-ln -s /path/to/academic-research-plugin ~/.claude/plugins/academic-research
-```
-
-4. (Optional) Set a Semantic Scholar API key for higher rate limits:
+Set a Semantic Scholar API key for higher rate limits:
 
 ```bash
 export S2_API_KEY="your-key-here"
