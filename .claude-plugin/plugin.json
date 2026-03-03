@@ -1,0 +1,8 @@
+{
+  "name": "academic-research",
+  "version": "1.0.0",
+  "description": "Academic research toolkit for AI PhD researchers — literature survey, paper reviewing, citation management, and more.",
+  "author": {
+    "name": "suizhi"
+  }
+}
