@@ -1,11 +1,11 @@
 {
   "name": "academic-research",
   "owner": {
-    "name": "suizhi"
+    "name": "JeanDiable"
   },
   "metadata": {
     "description": "Academic research toolkit for AI PhD researchers",
-    "homepage": "https://github.com/suizhi/academic-research-plugin"
+    "homepage": "https://github.com/JeanDiable/academic-research-plugin"
   },
   "plugins": [
     {
