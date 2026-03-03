@@ -7,7 +7,7 @@ A suite of 8 AI-powered academic workflow skills for Claude Code, designed for A
 1. Clone this repository:
 
 ```bash
-git clone <repo-url> academic-research-plugin
+git clone https://github.com/JeanDiable/academic-research-plugin.git
 ```
 
 2. Install Python dependencies:
