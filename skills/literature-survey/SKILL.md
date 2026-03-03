@@ -8,6 +8,7 @@ description: >
   survey a research topic, find related work, identify research gaps, or generate
   research ideas. Also use when the user says "literature review", "related work
   search", "find papers about", or "what's the latest on".
+user-invocable: true
 argument-hint: "<topic> [--date-range 2y] [--max-papers 50] [--venues NeurIPS,ICML]"
 ---
 

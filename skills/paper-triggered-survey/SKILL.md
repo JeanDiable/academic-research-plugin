@@ -7,6 +7,7 @@ description: >
   and proposes 2-3 innovation directions. Use when the user provides a specific paper
   and wants to understand its landscape, find extensions, or generate research ideas.
   Also triggers for "survey this paper", "what's related to this", "extend this work".
+user-invocable: true
 argument-hint: "<pdf-path | arxiv-url | tweet-url>"
 ---
 
