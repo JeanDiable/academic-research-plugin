@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{TITLE}}</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5/dist/reveal.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5/dist/theme/white.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5/plugin/highlight/monokai.css">
+    <!-- Print PDF stylesheet -->
+    <script>
+        var link = document.createElement('link');
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = window.location.search.match(/print-pdf/gi)
+            ? 'https://cdn.jsdelivr.net/npm/reveal.js@5/css/print/pdf.css'
+            : 'https://cdn.jsdelivr.net/npm/reveal.js@5/css/print/paper.css';
+        document.getElementsByTagName('head')[0].appendChild(link);
+    </script>
+    <style>
+        .reveal {
+            font-family: Georgia, 'Times New Roman', serif;
+            color: #333;
+        }
+
+        .reveal h1, .reveal h2, .reveal h3 {
+            font-weight: bold;
+            color: #222;
+        }
+
+        .reveal h1 {
+            font-size: 2.2em;
+            margin-bottom: 0.3em;
+        }
+
+        .reveal h2 {
+            font-size: 1.6em;
+            margin-bottom: 0.5em;
+        }
+
+        .reveal h3 {
+            font-size: 1.3em;
+            margin-bottom: 0.4em;
+        }
+
+        .reveal .subtitle {
+            font-size: 0.9em;
+            color: #666;
+            margin-top: 0.5em;
+        }
+
+        .reveal .author {
+            font-size: 0.85em;
+            color: #444;
+            margin: 0.3em 0;
+        }
+
+        .reveal .affiliation {
+            font-size: 0.75em;
+            color: #888;
+            margin: 0.2em 0;
+        }
+
+        .reveal p {
+            line-height: 1.5;
+            text-align: left;
+        }
+
+        .reveal ul, .reveal ol {
+            text-align: left;
+            display: inline-block;
+            margin: 0.5em 0;
+        }
+
+        .reveal li {
+            margin: 0.3em 0;
+            font-size: 0.95em;
+        }
+
+        .reveal table {
+            font-size: 0.7em;
+            margin: 0.5em auto;
+            border-collapse: collapse;
+        }
+
+        .reveal table th {
+            background: #f0f0f0;
+            font-weight: bold;
+        }
+
+        .reveal table td, .reveal table th {
+            padding: 0.4em 0.8em;
+            border: 1px solid #ddd;
+            text-align: center;
+        }
+
+        .reveal .highlight-box {
+            background: #f8f8f8;
+            border-left: 4px solid #2196F3;
+            padding: 0.8em 1em;
+            margin: 0.8em 0;
+            text-align: left;
+            font-weight: 500;
+            color: #1976D2;
+        }
+
+        .reveal .small {
+            font-size: 0.6em;
+            color: #555;
+        }
+
+        .reveal code {
+            background: #f5f5f5;
+            padding: 0.1em 0.3em;
+            border-radius: 3px;
+            font-family: 'Courier New', monospace;
+            font-size: 0.85em;
+        }
+
+        .reveal pre {
+            width: 100%;
+            font-size: 0.55em;
+            text-align: left;
+        }
+
+        .reveal pre code {
+            background: transparent;
+            padding: 0;
+        }
+
+        .reveal .slide-number {
+            font-size: 0.7em;
+            color: #999;
+        }
+
+        /* Responsive font sizing */
+        @media (max-width: 960px) {
+            .reveal h1 { font-size: 1.8em; }
+            .reveal h2 { font-size: 1.4em; }
+            .reveal h3 { font-size: 1.1em; }
+            .reveal li { font-size: 0.85em; }
+        }
+
+        @media (max-width: 600px) {
+            .reveal h1 { font-size: 1.5em; }
+            .reveal h2 { font-size: 1.2em; }
+            .reveal h3 { font-size: 1em; }
+            .reveal li { font-size: 0.75em; }
+            .reveal table { font-size: 0.6em; }
+        }
+
+        /* Print styles for PDF export */
+        @media print {
+            .reveal {
+                font-size: 16px;
+            }
+            .reveal h1 {
+                font-size: 2em;
+                page-break-after: avoid;
+            }
+            .reveal h2 {
+                font-size: 1.5em;
+                page-break-after: avoid;
+            }
+            .reveal section {
+                page-break-after: always;
+            }
+            .reveal .slide-number {
+                display: block;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="reveal">
+        <div class="slides">
+
+            <!-- Title Slide -->
+            <section>
+                <h1>{{TITLE}}</h1>
+                <p class="author">{{AUTHORS}}</p>
+                <p class="affiliation">{{AFFILIATIONS}}</p>
+                <aside class="notes">
+                    Welcome to the presentation. Introduce yourself and your institutional affiliation.
+                    Briefly mention the title of your work and what the audience will learn today.
+                </aside>
+            </section>
+
+            <!-- Content slides will be inserted here -->
+
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@5/dist/reveal.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@5/plugin/notes/notes.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@5/plugin/highlight/highlight.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@5/plugin/math/math.js"></script>
+    <script>
+        Reveal.initialize({
+            hash: true,
+            slideNumber: true,
+            transition: 'fade',
+            transitionSpeed: 'default',
+            embedded: true,
+            keyboard: true,
+            touch: true,
+            overview: true,
+            center: true,
+            plugins: [RevealNotes, RevealHighlight, RevealMath.KaTeX],
+            math: {
+                mathjax: 'https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js',
+                config: 'TeX-AMS_HTML-full'
+            }
+        });
+    </script>
+</body>
+</html>
