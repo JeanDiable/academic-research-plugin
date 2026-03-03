@@ -51,7 +51,7 @@ The skill automatically detects the input type from `$ARGUMENTS`:
 Before running the skill, install dependencies:
 
 ```bash
-pip install -r /Users/suizhi/Desktop/Research_Claude/academic-research-plugin/scripts/requirements.txt
+pip install -r "BASE_DIR/scripts/requirements.txt"
 ```
 
 Required packages:
@@ -111,7 +111,7 @@ Each query should be specific enough to find relevant papers while broad enough 
 For each query generated in Step 4:
 
 ```bash
-python /Users/suizhi/Desktop/Research_Claude/academic-research-plugin/scripts/paper_search.py \
+python "BASE_DIR/scripts/paper_search.py" \
   --query "<query>" \
   --max-results 20 \
   --output json \
@@ -125,14 +125,14 @@ Collect results and deduplicate across queries. Keep papers with relevance score
 If Semantic Scholar paper ID available:
 
 ```bash
-python /Users/suizhi/Desktop/Research_Claude/academic-research-plugin/scripts/paper_search.py \
+python "BASE_DIR/scripts/paper_search.py" \
   --paper-id <S2_ID> \
   --citing \
   --limit 50
 ```
 
 ```bash
-python /Users/suizhi/Desktop/Research_Claude/academic-research-plugin/scripts/paper_search.py \
+python "BASE_DIR/scripts/paper_search.py" \
   --paper-id <S2_ID> \
   --cited-by \
   --limit 50
@@ -191,7 +191,7 @@ Base proposals on:
 For all papers in final output, collect BibTeX entries:
 
 ```bash
-python /Users/suizhi/Desktop/Research_Claude/academic-research-plugin/scripts/bibtex_utils.py \
+python "BASE_DIR/scripts/bibtex_utils.py" \
   fetch \
   --title "<paper-title>"
 ```
@@ -392,7 +392,7 @@ Complete BibTeX for all papers referenced in this survey:
 **Survey Generated:** [Timestamp]
 **Total Papers Found:** [N]
 **Total Proposals Generated:** 3
-**Base Directory:** /Users/suizhi/Desktop/Research_Claude/academic-research-plugin
+**Base Directory:** [BASE_DIR]
 ```
 
 ## Output Directory Structure

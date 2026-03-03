@@ -1,0 +1,4 @@
+requests>=2.31
+arxiv>=2.1
+deep-translator>=1.11
+pybtex>=0.24
