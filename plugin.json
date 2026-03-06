@@ -1,0 +1,15 @@
+{
+  "name": "academic-research",
+  "version": "1.0.0",
+  "description": "Academic research toolkit for AI PhD researchers — literature survey, paper reviewing, citation management, and more.",
+  "skills": [
+    "skills/literature-survey",
+    "skills/paper-reviewing",
+    "skills/paper-polishing",
+    "skills/citation-assistant",
+    "skills/survey-writing",
+    "skills/paper-triggered-survey",
+    "skills/poster-slides-maker",
+    "skills/homework-machine"
+  ]
+}
